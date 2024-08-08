@@ -1,0 +1,105 @@
+body {
+    background-image: url(volume_figure_square_162305_3840x2400.jpg);
+    background-color: rgba(255, 255, 255, 0.915);
+    background-blend-mode: lighten;
+    background-size: cover;
+    display: flex;
+}
+
+#customer-form {
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 100px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.624);
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 800px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+#customer-form h1 {
+    text-align: center;
+}
+select {
+    background-color: rgba(255, 255, 255, 0.068);
+    padding: 10px;
+    border-radius: 5px;
+    width: 185px;
+    margin-right: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+::placeholder {
+    color: black;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    width: 185px;
+    margin-right: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+#customer-form .name {
+    display: flex;
+}
+
+#customer-form .address {
+    display: flex;
+    flex-wrap: wrap;
+
+    input {
+        width: 365px;
+    }
+
+    select {
+        width: 388px;
+    }
+}
+#customer-form .inp {
+    display: flex;
+    flex-wrap: wrap;
+    input {
+        width: 365px;
+    }
+}
+
+#customer-form .check {
+    input {
+        width: 15px;
+        height: 15px;
+    }
+
+    margin-bottom: 10px;
+}
+
+#customer-form button {
+    background-color: rgb(47, 255, 154);
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+}
+/* #customer-form:hover{
+    background-color: rgb(46, 46, 46);
+    color: rgb(150, 150, 150);
+    select,input{
+        color: rgb(150, 150, 150);
+    }
+    ::placeholder{
+        color: rgb(150, 150, 150);
+    }
+    transition: 1s ease;
+} */
