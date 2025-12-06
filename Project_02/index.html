@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIMEONE - Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="left-panel panel-content">
+            <header class="logo-section">
+                <i class="fas fa-cat"></i> 
+                <h2 class="logo-text">KIMEONE</h2>
+            </header>
+
+            <div class="form-wrapper">
+                <div class="auth-form login active" id="login-content">
+                    <h1>Welcome Back</h1>
+                    <p class="subtitle">Log in to continue</p>
+                    
+                    <form id="loginForm">
+                        <button type="button" class="google-login-btn">
+                            <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google icon">
+                            Log in with Google
+                        </button>
+                        
+                        <div class="or-separator">
+                            <div class="line"></div>
+                            <span>OR LOG IN WITH EMAIL</span>
+                            <div class="line"></div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="email" id="login-email" placeholder="You Email" required>
+                        </div>
+                        
+                        <div class="input-group">
+                            <input type="password" id="login-password" placeholder="You Password" required>
+                        </div>
+
+                        <div class="options-row">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="keep-logged">
+                                <label for="keep-logged">Keep me logged in</label>
+                            </div>
+                            <a href="#" class="forgot-password-link">Forgot password</a>
+                        </div>
+                        
+                        <button type="submit" class="login-btn">
+                            Log in 
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <p class="signup-prompt">
+                        Don't have an account yet? 
+                        <a href="#" class="sign-up-link switch-form" data-target="signup">Sign up</a>
+                    </p>
+                </div>
+
+                <div class="auth-form signup" id="signup-content">
+                    <h1>Join KIMEONE</h1>
+                    <p class="subtitle">Create your new account</p>
+                    
+                    <form id="signupForm">
+                        <div class="input-group">
+                            <input type="text" id="signup-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" id="signup-email" placeholder="Your Email" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" id="signup-password" placeholder="Create Password" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required>
+                        </div>
+
+                        <button type="submit" class="login-btn signup-submit-btn">
+                            Sign Up 
+                            <i class="fas fa-user-plus"></i>
+                        </button>
+                    </form>
+                    <div class="or-separator">
+                        <div class="line"></div>
+                        <span>OR SIGN UP WITH GOOGLE</span>
+                        <div class="line"></div>
+                    </div>
+                    <p class="signup-prompt">
+                        Already have an account? 
+                        <a href="#" class="sign-up-link switch-form" data-target="login">Log in</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel panel-content">
+            <div class="update-info">
+                <h3 class="update-title">New Update Available</h3>
+                <p class="update-text">We have added some new ovesome features</p>
+                <a href="#" class="learn-more-btn">LEARN MORE</a>
+            </div>
+            <div class="illustration-placeholder"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
