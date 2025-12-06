@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIMEONE Auth</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="visual-panel">
+            <div class="visual-header">
+                <span>Selected Works</span>
+                <div class="auth-links">
+                    <a href="#" class="sign-up" id="nav-sign-up">Sign Up</a>
+                    <a href="#" class="join-us-btn">Join Us</a>
+                </div>
+            </div>
+            <div class="visual-content">
+                <div class="profile-card">
+                    <img src="img/bg.jpg" alt="Kimeone.ui" class="avatar">
+                    <div class="profile-info">
+                        <h3>Kimeone.ui</h3>
+                        <p>UI & Illustration</p>
+                    </div>
+                </div>
+                <div class="nav-arrows">
+                    <button id="prev-btn" aria-label="Previous"></button>
+                    <button id="next-btn" aria-label="Next"></button>
+                </div>
+            </div>
+        </div>
+        <div class="form-panel">
+            <header class="form-header">
+                <h2 class="logo">KIMEONE</h2>
+                <div class="language-select">
+                    <i class="fas fa-globe"></i>
+                    <span>EN</span>
+                    <i class="fas fa-caret-down"></i>
+                </div>
+            </header>
+
+            <div class="form-wrapper">
+                
+                <div class="auth-form active" id="login-form-content">
+                    <h1>Hi Designer</h1>
+                    <p class="welcome-text">Welcome to KIMEONE</p>
+                    <form id="loginForm">
+                        <div class="input-group">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="login-password">Password</label>
+                            <input type="password" id="login-password" required>
+                        </div>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                        <div class="or-separator">
+                            <div class="line"></div>
+                            <span>or</span>
+                            <div class="line"></div>
+                        </div>
+                        <button type="button" class="google-login-btn">
+                            <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google icon">
+                            Login with Google
+                        </button>
+                        <button type="submit" class="auth-btn login-btn">Login</button>
+                    </form>
+                    <p class="signup-prompt">Don't have an account? <a href="#" class="sign-up-link switch-form" data-target="signup">Sign up</a></p>
+                </div>
+
+                <div class="auth-form" id="signup-form-content">
+                    <h1>Join KIMEONE</h1>
+                    <p class="welcome-text">Create your new account</p>
+                    <form id="signupForm">
+                        <div class="input-group">
+                            <label for="signup-name">Username</label>
+                            <input type="text" id="signup-name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="signup-email">Email</label>
+                            <input type="email" id="signup-email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="signup-password">Password</label>
+                            <input type="password" id="signup-password" required>
+                        </div>
+                        <button type="submit" class="auth-btn signup-btn">Sign Up</button>
+                        <div class="or-separator">
+                            <div class="line"></div>
+                            <span>or</span>
+                            <div class="line"></div>
+                        </div>
+                        <button type="button" class="google-login-btn">
+                            <img src="https://img.icons8.com/color/16/000000/google-logo.png" alt="Google icon">
+                            Sign Up with Google
+                        </button>
+                    </form>
+                    <p class="signup-prompt">Already have an account? <a href="#" class="sign-up-link switch-form" data-target="login">Login</a></p>
+                </div>
+
+            </div>
+
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
