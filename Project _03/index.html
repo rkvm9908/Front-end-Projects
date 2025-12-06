@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <header class="calc-header">
+            <span id="datetime-display"></span>
+            <h1>SCIENTIFIC CALC</h1>
+        </header>
+
+        <div id="calc-display" class="calc-display">0</div>
+
+        <div class="button-pad">
+            <button class="btn sci-op" data-op="sin">sin</button>
+            <button class="btn sci-op" data-op="cos">cos</button>
+            <button class="btn sci-op" data-op="tan">tan</button>
+            <button class="btn sci-op" data-op="log">log</button>
+
+            <button class="btn sci-op" data-op="pi">π</button>
+            <button class="btn sci-op" data-op="e">e</button>
+            <button class="btn sci-op" data-op="sqrt">√</button>
+            <button class="btn sci-op" data-op="square">x²</button>
+
+            <button class="btn sci-op" data-op="pow">xʸ</button>
+            <button class="btn clear" data-op="clear-all">C</button>
+            <button class="btn delete" data-op="delete">Del</button>
+            <button class="btn standard-op" data-op="divide">/</button>
+
+            <button class="btn number">7</button>
+            <button class="btn number">8</button>
+            <button class="btn number">9</button>
+            <button class="btn standard-op" data-op="multiply">*</button>
+
+            <button class="btn number">4</button>
+            <button class="btn number">5</button>
+            <button class="btn number">6</button>
+            <button class="btn standard-op" data-op="subtract">-</button>
+
+            <button class="btn number">1</button>
+            <button class="btn number">2</button>
+            <button class="btn number">3</button>
+            <button class="btn standard-op" data-op="add">+</button>
+
+            <button class="btn sci-op" data-op="percent">%</button>
+            <button class="btn number">0</button>
+            <button class="btn number" data-op="decimal">.</button>
+            <button class="btn equals" data-op="equals">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

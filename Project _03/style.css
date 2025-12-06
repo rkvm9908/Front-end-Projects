@@ -1,0 +1,139 @@
+/* GLOBAL RESET AND FONT */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Very dark background */
+    color: #f0f0f0;
+    /* NO PAGE OVERFLOW: Ensures the content fits the viewport */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.calculator-container {
+    width: 90%;
+    max-width: 450px; /* Max width for desktop viewing */
+    background-color: #1f1f1f; /* Dark gray calculator body */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+/* HEADER AND DATE/TIME DISPLAY */
+.calc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 0.8em;
+    color: #a0a0a0;
+}
+
+.calc-header h1 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #00bcd4; /* Accent color for the title */
+}
+
+#datetime-display {
+    text-align: right;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+/* DISPLAY AREA */
+.calc-display {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    font-size: 3em;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+    min-height: 80px;
+    overflow-x: auto; /* Allow horizontal scroll if number is too long */
+}
+
+/* BUTTON GRID LAYOUT */
+.button-pad {
+    display: grid;
+    /* 4 columns for buttons */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* BUTTON STYLING */
+.btn {
+    padding: 20px 0;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.15s ease, box-shadow 0.1s ease;
+}
+
+/* Number Buttons */
+.number {
+    background-color: #424242; /* Darker gray for numbers */
+    color: #ffffff;
+}
+
+/* Standard Operation Buttons (+, -, *, /) */
+.standard-op {
+    background-color: #ff9800; /* Bright orange */
+    color: #1f1f1f;
+}
+
+/* Scientific Operation Buttons (sin, log, x², etc.) */
+.sci-op {
+    background-color: #00bcd4; /* Cyan/Blue accent color */
+    color: #1f1f1f;
+}
+
+/* Clear and Delete Buttons */
+.clear {
+    background-color: #f44336; /* Red for Clear */
+    color: #ffffff;
+}
+
+.delete {
+    background-color: #9c27b0; /* Purple for Delete */
+    color: #ffffff;
+}
+
+/* Equals Button */
+.equals {
+    background-color: #4caf50; /* Green for Equals */
+    color: #1f1f1f;
+}
+
+/* Hover Effects */
+.btn:hover {
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Adjustments for smaller screens */
+@media (max-width: 500px) {
+    .calculator-container {
+        width: 100%;
+        height: 100vh;
+        max-width: none;
+        padding: 10px;
+        border-radius: 0;
+    }
+    .calc-display {
+        font-size: 2.5em;
+    }
+    .btn {
+        padding: 15px 0;
+        font-size: 1.1em;
+    }
+}
