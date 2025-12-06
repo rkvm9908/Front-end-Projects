@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK's Project Portfolio Index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --card-background: #ffffff;
+    --text-color: #343a40;
+    --border-color: #dee2e6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Header Styling --- */
+.main-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.main-header p {
+    font-size: 1.1rem;
+}
+
+/* --- Project List Container --- */
+.project-list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    flex-grow: 1;
+}
+
+/* --- Project Card Styling --- */
+.project-card {
+    background-color: var(--card-background);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project-card h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    flex-grow: 1; /* பட்டனை கீழே தள்ளுகிறது */
+}
+
+/* --- Navigation Button --- */
+.navigate-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.navigate-btn:hover {
+    background-color: #0056b3;
+}
+
+/* --- Footer Styling --- */
+.main-footer {
+    background-color: var(--text-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .project-list-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .main-header h1 {
+        font-size: 2rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <h1>RK's Development Projects</h1>
+        <p>A list of committed projects for easy navigation.</p>
+    </header>
+
+    <main class="project-list-container">
+        <div class="project-card">
+            <h2>Project_01: Login UI Design</h2>
+            <p class="description">Modern, responsive login and signup form with sliding animations.</p>
+            <a href="project_01.html" class="navigate-btn">View Project</a>
+        </div>
+        
+        <div class="project-card">
+            <h2>Project_02: Simple Calculator App</h2>
+            <p class="description">A basic JavaScript calculator application with arithmetic functions.</p>
+            <a href="project_02.html" class="navigate-btn">View Project</a>
+        </div>
+        
+        <div class="project-card">
+            <h2>Project_03: To-Do List Manager</h2>
+            <p class="description">An interactive to-do list built using DOM manipulation.</p>
+            <a href="project_03.html" class="navigate-btn">View Project</a>
+        </div>
+
+        </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 RK Development Portfolio</p>
+    </footer>
+</body>
+</html>
